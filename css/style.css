@@ -89,3 +89,11 @@ h1{
     background-position: center center;
     text-shadow: 0px 2px 3px #555;
 }
+
+#section1 {
+    text-align: left;
+}
+
+#section1 p {
+    padding: 0;
+}
