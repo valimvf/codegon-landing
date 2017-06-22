@@ -6,11 +6,11 @@ body {
 
 h1{
     font-size: 5em;
-    color: #fff;
+    color: #e8e8e8;
     margin:0;
 }
 .intro p{
-    color: #fff;
+    color: #e8e8e8;
 }
 
 /* Centered texts in each section
@@ -33,7 +33,7 @@ h1{
 /* Bottom menu
 * --------------------------------------- */
 #infoMenu li a {
-    color: #fff;
+    color: #e8e8e8;
 }
 
 #header{
@@ -61,7 +61,7 @@ h1{
 }
 
 #header a {
-    color: #FFFFFF;
+    color: #e8e8e8;
     text-decoration: none;
 }
 
@@ -76,15 +76,77 @@ h1{
 }
 #header li:hover:after, #header li.active:after {
     width: 100%;
-    background: red;
+    background: #e8e8e8;
 }
 
+p {
+    font-size: 19px;
+}
+
+a {
+    color: #e8e8e8 !important;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #e8e8e8;
+    text-decoration: underline;
+    cursor: pointer;
+}
 
 #section0 {
     background: linear-gradient(
-            rgba(0, 0, 0, 0.45),
-            rgba(0, 0, 0, 0.45)
-    ), url('../img/home-bg.jpeg');
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+    ), url('../img/home2.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    text-shadow: 0px 2px 3px #555;
+    padding-top: 0;
+}
+
+#section1 {
+     background: linear-gradient(
+             rgba(0, 0, 0, 0.6),
+             rgba(0, 0, 0, 0.6)
+     ), url('../img/about.jpg');
+     -webkit-background-size: cover;
+     background-size: cover;
+     background-position: center center;
+     text-shadow: 0px 2px 3px #555;
+     padding-top: 0;
+ }
+
+#section2 {
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+    ), url('../img/money.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    text-shadow: 0px 2px 3px #555;
+    padding-top: 0;
+}
+
+#section3 {
+     background: linear-gradient(
+             rgba(0, 0, 0, 0.6),
+             rgba(0, 0, 0, 0.6)
+     ), url('../img/work.png');
+     -webkit-background-size: cover;
+     background-size: cover;
+     background-position: center center;
+     text-shadow: 0px 2px 3px #555;
+     padding-top: 0;
+ }
+
+#section4 {
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+    ), url('../img/contact.jpg');
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center center;
@@ -113,4 +175,8 @@ h1{
 
 #section1 p {
     padding: 0;
+}
+
+.btn a{
+    text-decoration: none;
 }
