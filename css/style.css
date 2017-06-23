@@ -65,33 +65,6 @@ h1{
 #header a {
     color: #e8e8e8;
     text-decoration: none;
-    text-shadow:
-        /* first layer at 1px */
-    -1px -1px 0px #000,
-    0px -1px 0px #000,
-    1px -1px 0px #000,
-    -1px  0px 0px #000,
-    1px  0px 0px #000,
-    -1px  1px 0px #000,
-    0px  1px 0px #000,
-    1px  1px 0px #000,
-        /* second layer at 2px */
-    -2px -2px 0px #000,
-    -1px -2px 0px #000,
-    0px -2px 0px #000,
-    1px -2px 0px #000,
-    2px -2px 0px #000,
-    2px -1px 0px #000,
-    2px  0px 0px #000,
-    2px  1px 0px #000,
-    2px  2px 0px #000,
-    1px  2px 0px #000,
-    0px  2px 0px #000,
-    -1px  2px 0px #000,
-    -2px  2px 0px #000,
-    -2px  1px 0px #000,
-    -2px  0px 0px #000,
-    -2px -1px 0px #000;
 }
 
 #header li:after {
@@ -228,6 +201,35 @@ a:hover {
     }
     .navbar-toggle {
         margin-top: -15px;
+    }
+    #header a {
+        text-shadow:
+            /* first layer at 1px */
+        -1px -1px 0px #000,
+        0px -1px 0px #000,
+        1px -1px 0px #000,
+        -1px  0px 0px #000,
+        1px  0px 0px #000,
+        -1px  1px 0px #000,
+        0px  1px 0px #000,
+        1px  1px 0px #000,
+            /* second layer at 2px */
+        -2px -2px 0px #000,
+        -1px -2px 0px #000,
+        0px -2px 0px #000,
+        1px -2px 0px #000,
+        2px -2px 0px #000,
+        2px -1px 0px #000,
+        2px  0px 0px #000,
+        2px  1px 0px #000,
+        2px  2px 0px #000,
+        1px  2px 0px #000,
+        0px  2px 0px #000,
+        -1px  2px 0px #000,
+        -2px  2px 0px #000,
+        -2px  1px 0px #000,
+        -2px  0px 0px #000,
+        -2px -1px 0px #000;
     }
 }
 
