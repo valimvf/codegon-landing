@@ -8,7 +8,7 @@
     <meta name="description" content="Codegon - an outsourcing company to build modern web apps." />
     <meta name="keywords"  content="codegon, web dev, app, modern, web app" />
     <meta name="Resource-type" content="Document" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css" />
@@ -18,18 +18,28 @@
 </head>
 <body>
 
-    <div id="header">
-        <div class="container">
-            <span class="pull-left logo">codegon;</span>
-            <ul id="theMenu" class="pull-right">
-                <li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
-                <li data-menuanchor="aboutUs"><a href="#aboutUs">About us</a></li>
-                <li data-menuanchor="pricing"><a href="#pricing">Pricing estimate</a></li>
-                <li data-menuanchor="workWithUs"><a href="#workWithUs">Work with us</a></li>
-                <li data-menuanchor="contactUs"><a href="#contactUs">Contact us</a></li>
-            </ul>
+    <nav id="header" class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <span class="pull-left logo">codegon;</span>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul id="theMenu" class="pull-right nav navbar-nav">
+                    <li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
+                    <li data-menuanchor="aboutUs"><a href="#aboutUs">About us</a></li>
+                    <li data-menuanchor="pricing"><a href="#pricing">Pricing estimate</a></li>
+                    <li data-menuanchor="workWithUs"><a href="#workWithUs">Work with us</a></li>
+                    <li data-menuanchor="contactUs"><a href="#contactUs">Contact us</a></li>
+                </ul>
+            </div>
         </div>
-    </div>
+    </nav>
 
     <div id="fullpage">
         <div class="section " id="section0">

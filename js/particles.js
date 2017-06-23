@@ -10,13 +10,12 @@
 var pJS = function(tag_id, params){
 
   var canvas_el = document.querySelector('#'+tag_id+' > .particles-js-canvas-el');
-
   /* particles.js variables with default values */
   this.pJS = {
     canvas: {
       el: canvas_el,
-      w: canvas_el.offsetWidth,
-      h: canvas_el.offsetHeight
+      w: window.innerWidth,
+      h: window.innerHeight
     },
     particles: {
       number: {
@@ -165,8 +164,8 @@ var pJS = function(tag_id, params){
       pJS.tmp.retina = false;
     }
 
-    pJS.canvas.w = pJS.canvas.el.offsetWidth * pJS.canvas.pxratio;
-    pJS.canvas.h = pJS.canvas.el.offsetHeight * pJS.canvas.pxratio;
+    pJS.canvas.w = window.innerWidth * pJS.canvas.pxratio;
+    pJS.canvas.h = window.innerHeight * pJS.canvas.pxratio;
 
     pJS.particles.size.value = pJS.tmp.obj.size_value * pJS.canvas.pxratio;
     pJS.particles.size.anim.speed = pJS.tmp.obj.size_anim_speed * pJS.canvas.pxratio;

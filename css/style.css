@@ -52,6 +52,8 @@ h1{
     font-family: courier;
     font-size: 20px;
     line-height: 6px;
+    margin-left: 30px;
+    margin-top: 20px;
 }
 #header li {
     display: inline-block;
@@ -63,6 +65,33 @@ h1{
 #header a {
     color: #e8e8e8;
     text-decoration: none;
+    text-shadow:
+        /* first layer at 1px */
+    -1px -1px 0px #000,
+    0px -1px 0px #000,
+    1px -1px 0px #000,
+    -1px  0px 0px #000,
+    1px  0px 0px #000,
+    -1px  1px 0px #000,
+    0px  1px 0px #000,
+    1px  1px 0px #000,
+        /* second layer at 2px */
+    -2px -2px 0px #000,
+    -1px -2px 0px #000,
+    0px -2px 0px #000,
+    1px -2px 0px #000,
+    2px -2px 0px #000,
+    2px -1px 0px #000,
+    2px  0px 0px #000,
+    2px  1px 0px #000,
+    2px  2px 0px #000,
+    1px  2px 0px #000,
+    0px  2px 0px #000,
+    -1px  2px 0px #000,
+    -2px  2px 0px #000,
+    -2px  1px 0px #000,
+    -2px  0px 0px #000,
+    -2px -1px 0px #000;
 }
 
 #header li:after {
@@ -180,3 +209,37 @@ a:hover {
 .btn a{
     text-decoration: none;
 }
+
+.navbar .icon-bar {
+    background-color: #e8e8e8;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: transparent;
+}
+
+@media (max-width: 768px) {
+    #header li {
+        display: block;
+    }
+    #header .logo {
+        margin-left: 30px;
+        margin-top: 0;
+    }
+    .navbar-toggle {
+        margin-top: -15px;
+    }
+}
+
+@media (min-width: 1200px){
+    .container-fluid {
+        width: 1170px;
+    }
+}
+@media (min-width: 992px){
+    .container-fluid {
+        width: 970px;
+    }
+}
+
+
