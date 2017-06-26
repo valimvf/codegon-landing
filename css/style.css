@@ -244,4 +244,12 @@ a:hover {
     }
 }
 
+body {
+    text-align: center;
+    padding-top: 20%;
+    color: #222;
+}
 
+h1 {
+    color: #222 !important;
+}
