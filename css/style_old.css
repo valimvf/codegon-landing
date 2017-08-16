@@ -1,0 +1,255 @@
+/* Style for our header texts
+	* --------------------------------------- */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-size: 5em;
+    color: #e8e8e8;
+    margin:0;
+}
+.intro p{
+    color: #e8e8e8;
+}
+
+/* Centered texts in each section
+* --------------------------------------- */
+.section{
+    text-align:center;
+    position: relative;
+}
+
+/* Overwriting styles for control arrows for slides
+* --------------------------------------- */
+.controlArrow.prev {
+    left: 50px;
+}
+.controlArrow.next{
+    right: 50px;
+}
+
+
+/* Bottom menu
+* --------------------------------------- */
+#infoMenu li a {
+    color: #e8e8e8;
+}
+
+#header{
+    position:fixed;
+    height: 50px;
+    display:block;
+    z-index:9;
+    text-align:right;
+    color: #f2f2f2;
+    padding: 30px 0 0 0;
+    top:0px;
+    width: 100%;
+}
+
+#header .logo {
+    font-family: courier;
+    font-size: 20px;
+    line-height: 6px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+#header li {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+    margin-right: 20px;
+}
+
+#header a {
+    color: #e8e8e8;
+    text-decoration: none;
+}
+
+#header li:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width 1s ease, background-color 1s ease;
+}
+#header li:hover:after, #header li.active:after {
+    width: 100%;
+    background: #e8e8e8;
+}
+
+p {
+    font-size: 19px;
+}
+
+a {
+    color: #e8e8e8 !important;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: #e8e8e8;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#section0 {
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+    ), url('../img/home2.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    text-shadow: 0px 2px 3px #555;
+    padding-top: 0;
+}
+
+#section1 {
+     background: linear-gradient(
+             rgba(0, 0, 0, 0.6),
+             rgba(0, 0, 0, 0.6)
+     ), url('../img/about.jpg');
+     -webkit-background-size: cover;
+     background-size: cover;
+     background-position: center center;
+     text-shadow: 0px 2px 3px #555;
+     padding-top: 0;
+ }
+
+#section2 {
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+    ), url('../img/money.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    text-shadow: 0px 2px 3px #555;
+    padding-top: 0;
+}
+
+#section3 {
+     background: linear-gradient(
+             rgba(0, 0, 0, 0.6),
+             rgba(0, 0, 0, 0.6)
+     ), url('../img/work.png');
+     -webkit-background-size: cover;
+     background-size: cover;
+     background-position: center center;
+     text-shadow: 0px 2px 3px #555;
+     padding-top: 0;
+ }
+
+#section4 {
+    background: linear-gradient(
+            rgba(0, 0, 0, 0.6),
+            rgba(0, 0, 0, 0.6)
+    ), url('../img/contact.jpg');
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    text-shadow: 0px 2px 3px #555;
+    padding-top: 0;
+}
+
+.title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#particles-js {
+    height: 100%;
+}
+
+#section1 {
+    text-align: left;
+}
+
+#section1 p {
+    padding: 0;
+}
+
+.btn a{
+    text-decoration: none;
+}
+
+.navbar .icon-bar {
+    background-color: #e8e8e8;
+}
+
+.nav>li>a:focus, .nav>li>a:hover {
+    background-color: transparent;
+}
+
+@media (max-width: 768px) {
+    #header li {
+        display: block;
+    }
+    #header .logo {
+        margin-left: 30px;
+        margin-top: 0;
+    }
+    .navbar-toggle {
+        margin-top: -15px;
+    }
+    #header a {
+        text-shadow:
+            /* first layer at 1px */
+        -1px -1px 0px #000,
+        0px -1px 0px #000,
+        1px -1px 0px #000,
+        -1px  0px 0px #000,
+        1px  0px 0px #000,
+        -1px  1px 0px #000,
+        0px  1px 0px #000,
+        1px  1px 0px #000,
+            /* second layer at 2px */
+        -2px -2px 0px #000,
+        -1px -2px 0px #000,
+        0px -2px 0px #000,
+        1px -2px 0px #000,
+        2px -2px 0px #000,
+        2px -1px 0px #000,
+        2px  0px 0px #000,
+        2px  1px 0px #000,
+        2px  2px 0px #000,
+        1px  2px 0px #000,
+        0px  2px 0px #000,
+        -1px  2px 0px #000,
+        -2px  2px 0px #000,
+        -2px  1px 0px #000,
+        -2px  0px 0px #000,
+        -2px -1px 0px #000;
+    }
+}
+
+@media (min-width: 1200px){
+    .container-fluid {
+        width: 1170px;
+    }
+}
+@media (min-width: 992px){
+    .container-fluid {
+        width: 970px;
+    }
+}
+
+body {
+    text-align: center;
+    padding-top: 20%;
+    color: #222;
+}
+
+h1 {
+    color: #222 !important;
+}
